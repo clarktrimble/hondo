@@ -3,6 +3,8 @@
 
 Random Strings for your Golang
 
+![hondocrop](https://github.com/clarktrimble/hondo/assets/5055161/fc7517bd-7124-4c83-b36e-23863716fdf3)
+
 ## Why?
 
 Why not just uuid?
