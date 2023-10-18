@@ -1,26 +1,33 @@
 
 # Hondo
 
-Random Strings for your Golang
+Smaller, Copyable Random Strings for Golang
 
 ![hondocrop](https://github.com/clarktrimble/hondo/assets/5055161/fc7517bd-7124-4c83-b36e-23863716fdf3)
 
 ## Why?
 
-Why not just uuid?
+Why not just UUID?
 
  - UUID is hard on the eyes, especially when they gang up
  - UUID can be a pain to cut and paste
  - Shorter strings are adequate for many id's
- - Where uniqueness is required, best for backend to enforces
+ - Where uniqueness is required, best for back end to enforce in any case
 
 Why a module?
 
  -  Single-responsibility
+ -  Nice random strings come in handy often!
 
 ## Like Totally Horked
 
+Attribution and thanks to:
+
 Method 8 from https://stackoverflow.com/questions/22892120
+
+## Requires go1.20 or later
+
+Randomized seed is irresistible :)
 
 ## Example
 
@@ -36,12 +43,12 @@ Method 8 from https://stackoverflow.com/questions/22892120
 
 ## Golang (Anti) Idioms
 
-I dig the Golang community, but:
+I dig the Golang community, but I might be a touch rouge with:
 
   - multi-char variable names
   - named return parameters
-  - only cap first letter of acronyms
   - BDD/DSL testing
+  - liberal use of vertical space
 
 All in the name of readability, which of course, tends towards the subjective.
 

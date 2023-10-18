@@ -1,6 +1,7 @@
 package hondo_test
 
 import (
+	"math/rand"
 	"testing"
 
 	. "github.com/onsi/ginkgo/v2"
@@ -29,10 +30,19 @@ var _ = Describe("Hondo", func() {
 		When("all is well", func() {
 			It("returns a string of requested length", func() {
 				Expect(id).To(HaveLen(length))
+				Expect(id).ToNot(Equal("1LGIehp1s"))
+			})
+		})
+
+		When("seed is set to a known value", func() {
+			BeforeEach(func() {
+				rand.Seed(1) //nolint:staticcheck // ok for simple unit
+			})
+
+			It("returns a predictable string", func() {
+				Expect(id).To(Equal("1LGIehp1s"))
 			})
 		})
 	})
-
-	// Todo: check more, perhaps with fuzz?
 
 })
